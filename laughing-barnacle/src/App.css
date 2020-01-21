@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  padding: 1em 0;
+}
+
+.App-container {
+  display: grid;
+  min-height: 100vh;
+  width: 100vw;
+  grid-template: 5em auto 5em/ 10em auto 10em;
+  grid-template-areas:
+  "left-area header-area right-area"
+  "left-area main-area right-area"
+  "left-area footer-area right-area"
+}
+.App-header-area {
+  grid-area: header-area;
+  border: 1px solid red;
+}
+.App-footer-area {
+  grid-area: footer-area;
+  border: 1px solid red;
+}
+.App-left-area {
+  grid-area: left-area;
+  border: 1px solid red;
+}
+.App-right-area {
+  grid-area: right-area;
+  border: 1px solid red;
+}
+.App-main-area {
+  grid-area: main-area;
+  border: 1px solid red;
+  padding: 1em;
+}
