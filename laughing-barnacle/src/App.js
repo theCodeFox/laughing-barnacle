@@ -7,12 +7,8 @@ function App() {
       <header className="App-header App-header-area">
         EXAMPLE HEADER
       </header>
-      <div className="App-left-area">
-        SUN IMAGE?
-      </div>
-      <div className="App-right-area">
-        RAIN IMAGE?
-      </div>
+      <div className="App-left-area" />
+      <div className="App-right-area" />
       <div className="App-main-area">
         MAIN TEXT AREA
       </div>

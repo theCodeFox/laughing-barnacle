@@ -18,21 +18,31 @@
 .App-header-area {
   grid-area: header-area;
   border: 1px solid red;
+  background-color: white;
 }
 .App-footer-area {
   grid-area: footer-area;
   border: 1px solid red;
+  background-color: white;
+  padding: 1em;
 }
 .App-left-area {
   grid-area: left-area;
-  border: 1px solid red;
 }
 .App-right-area {
   grid-area: right-area;
-  border: 1px solid red;
 }
 .App-main-area {
   grid-area: main-area;
   border: 1px solid red;
+  background-color: white;
   padding: 1em;
+}
+
+.side-image {
+  height: 10em;
+  width: 10em;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
 }

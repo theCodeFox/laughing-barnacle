@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(http://textures101.com/textures/Nature/Sky/2011/7/4/tn1_4719142500d34d466031oseamless_rojgs.jpg);
+  background-repeat: repeat;
 }
 
 code {
