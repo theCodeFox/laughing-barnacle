@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Main = () => {
-  return <div className="App-main-area">
-  MAIN TEXT AREA
-  </div>
+class Main extends Component {
+  
+  state = {
+    loading: true
+  }
+
+  componentDidMount() {
+
+  }
+
+  render() {
+    return <div className="App-main-area">
+      {this.state.loading ? <div>loading...</div> : <div>weather stuff</div>}
+    </div>
+  }
 }
 
 export default Main;
