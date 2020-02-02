@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import keyStore from '../keystore.js'
 
 class Main extends Component {
   
@@ -6,8 +7,11 @@ class Main extends Component {
     loading: true
   }
 
-  componentDidMount() {
-
+  async componentDidMount() {
+    const url = keyStore.APIURL;
+    const response = await fetch(url);
+    const weatherForecast = await response.json();
+    console.log('here >>>',weatherForecast);
   }
 
   render() {
