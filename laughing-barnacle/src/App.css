@@ -11,26 +11,50 @@
   display: grid;
   min-height: 100vh;
   width: 100vw;
-  grid-template: 5em auto 5em/ 10em auto 10em;
+  grid-template: 15em auto 5em/ 10em auto 10em;
   grid-template-areas:
   "left-area header-area right-area"
   "left-area main-area right-area"
   "left-area footer-area right-area"
 }
+
 .App-header-area {
   grid-area: header-area;
   background-color: white;
-  padding: 1em 0;
-  font-size: 1.5em;
+  background-image: url(http://textures101.com/textures/Nature/Sky/2011/7/4/tn1_4719142500d34d466031oseamless_rojgs.jpg);
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  display: flex;
 }
+.header-text {
+  display: inline-block;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0.5em;
+}
+
 .App-footer-area {
   grid-area: footer-area;
   background-color: white;
   padding: 0;
+  margin: 0;
+  display: flex;
+
+  justify-content: space-between;
 }
+.footer-img {
+  margin: 0.5em 0.5em 0 0.5em;
+  height: 4em;
+  width: auto;
+  padding: 0;
+}
+
 .App-left-area {
   grid-area: left-area;
 }
+
 .App-right-area {
   grid-area: right-area;
 }
@@ -38,13 +62,4 @@
   grid-area: main-area;
   background-color: yellow;
   padding: 1em;
-}
-
-.footer-img {
-  display: block;
-  margin-left: auto;
-  margin-right: 0.5em;
-  height: 4em;
-  width: auto;
-  padding: 0;
 }
