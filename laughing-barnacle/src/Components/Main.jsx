@@ -23,18 +23,47 @@ class Main extends Component {
     return <div className="App-main-area">
       {this.state.loading
         ? <div>loading...</div>
-        : <div>
-          Temp: {this.state.forecast[0].main.temp}
-          <br />
-          Humidity: {this.state.forecast[0].main.humidity}
-          <br />
-          Weather: {this.state.forecast[0].weather[0].description}
-          <br />
-          <img src={`http://openweathermap.org/img/wn/${this.state.forecast[0].weather[0].icon}@2x.png`} alt={`${this.state.forecast[0].weather[0].description} icon`} />
-          <br />
-          Date: {this.state.forecast[0].dt_txt}
-          {/* <ForecastTable forecast={this.state.forecast} /> */}
-          </div>}
+        : <table>
+          <thead>
+          <tr id="forecastHeader">
+              <td>
+                Date/Time
+              </td>
+              <td>
+                Weather Icon
+              </td>
+              <td>
+                Weather
+              </td>
+              <td>
+                Temp
+              </td>
+              <td>
+                Humidity
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.forecast.map((data,i) => <tr key={`data-${i}`}>
+              <td>
+                {data.dt_txt}
+              </td>
+              <td>
+                <img
+                  src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+                  alt={`${data.weather[0].description} icon`} />
+              </td>
+              <td>
+                {data.weather[0].description}
+              </td>
+              <td>
+                {Math.round(data.main.temp - 273.15)} Celcius
+              </td>
+              <td>
+                {data.main.humidity}
+              </td>
+            </tr>)}
+          </tbody></table>}
     </div>
   }
 }
