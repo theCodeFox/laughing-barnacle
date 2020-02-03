@@ -27,7 +27,7 @@ class Main extends Component {
           <tr id="forecastHeader">
               <td><h4>Date/Time</h4></td>
               <td><h4>Weather Icon</h4></td>
-              <td><h4>Weather</h4></td>
+              <td><h4>Description</h4></td>
               <td><h4>Temp (Celcius)</h4></td>
               <td><h4>Humidity</h4></td>
             </tr>
@@ -37,7 +37,7 @@ class Main extends Component {
               <td>
                 {data.dt_txt}
               </td>
-              <td>
+              <td className="icon-backdrop">
                 <img
                   src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
                   alt={`${data.weather[0].description} icon`} />
