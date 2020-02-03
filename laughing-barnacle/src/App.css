@@ -11,7 +11,7 @@
   display: grid;
   min-height: 100vh;
   width: 100vw;
-  grid-template: 15em auto 5em/ 10em auto 10em;
+  grid-template: 10em auto 3em/ 10em auto 10em;
   grid-template-areas:
   "left-area header-area right-area"
   "left-area main-area right-area"
@@ -20,9 +20,6 @@
 
 .App-header-area {
   grid-area: header-area;
-  background-color: white;
-  background-image: url(http://textures101.com/textures/Nature/Sky/2011/7/4/tn1_4719142500d34d466031oseamless_rojgs.jpg);
-  background-repeat: repeat;
   padding: 0;
   margin: 0;
   color: aliceblue;
@@ -37,18 +34,21 @@
 
 .App-footer-area {
   grid-area: footer-area;
-  background-color: white;
   padding: 0;
   margin: 0;
   display: flex;
-
+  background-color: rgba(255, 255, 255, 0.5);
   justify-content: space-between;
 }
 .footer-img {
-  margin: 0.5em 0.5em 0 0.5em;
-  height: 4em;
+  margin: 0.5em 1em 0 1em;
+  height: 2em;
   width: auto;
   padding: 0;
+}
+.code-and-stuff-img {
+  border: 2px solid black;
+  border-radius: 0.5em;
 }
 
 .App-left-area {
@@ -60,6 +60,9 @@
 }
 .App-main-area {
   grid-area: main-area;
-  background-color: yellow;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1em;
+}
+.forecast-table {
+  justify-content: space-between;
 }

@@ -1,12 +1,14 @@
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(http://textures101.com/textures/Nature/Sky/2011/7/4/tn1_4719142500d34d466031oseamless_rojgs.jpg);
-  background-repeat: repeat; */
+  background-image: url(http://textures101.com/textures/Nature/Sky/2011/7/4/tn1_4719142500d34d466031oseamless_rojgs.jpg);
+  background-repeat: repeat;
 }
 
 code {
@@ -17,4 +19,10 @@ code {
 a {
   text-emphasis: none;
   text-decoration: none;
+}
+
+table {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid aliceblue;
 }

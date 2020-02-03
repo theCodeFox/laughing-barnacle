@@ -26,21 +26,11 @@ class Main extends Component {
         : <table>
           <thead>
           <tr id="forecastHeader">
-              <td>
-                Date/Time
-              </td>
-              <td>
-                Weather Icon
-              </td>
-              <td>
-                Weather
-              </td>
-              <td>
-                Temp
-              </td>
-              <td>
-                Humidity
-              </td>
+              <td><h4>Date/Time</h4></td>
+              <td><h4>Weather Icon</h4></td>
+              <td><h4>Weather</h4></td>
+              <td><h4>Temp (Celcius)</h4></td>
+              <td><h4>Humidity</h4></td>
             </tr>
           </thead>
           <tbody>
@@ -57,7 +47,7 @@ class Main extends Component {
                 {data.weather[0].description}
               </td>
               <td>
-                {Math.round(data.main.temp - 273.15)} Celcius
+                {Math.round(data.main.temp - 273.15)}
               </td>
               <td>
                 {data.main.humidity}
