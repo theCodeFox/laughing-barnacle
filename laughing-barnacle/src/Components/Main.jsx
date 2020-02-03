@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import keyStore from '../keystore.js'
-import ForecastTable from './ForecastTable.jsx';
 
 class Main extends Component {
   
