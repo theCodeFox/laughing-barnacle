@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This component is for your footer, which sits at the bottom of the browser. It usually contains contact info and links.
 const Footer = () => {
   return <footer className="App-footer-area">
     <a href="https://www.linkedin.com/in/kay-vose-codefox/" target="_blank" rel="noopener noreferrer">

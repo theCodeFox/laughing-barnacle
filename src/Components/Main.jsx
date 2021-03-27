@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import keyStore from '../keystore.js'
 
+
+// This contains the main content within the browser. Don't forget you can split this out into further components for increased clarity.
 class Main extends Component {
-  
+  // The state is where React stores tempory information. 
   state = {
     loading: true,
     forecast: null
   }
 
+  // This fetches the data on load from the weather API. It is asyncronous.
+  // Future Task: loading icon while waiting for data?
   async componentDidMount() {
     const url = keyStore.APIURL;
     const response = await fetch(url);
@@ -18,8 +22,10 @@ class Main extends Component {
     })
   }
 
+  // Does this look familiar? That's because it is heavily inluenced by HTML and is what is displayed within the component!
   render() {
     return <div className="App-main-area">
+      {/* JS must be within curly brackets */}
       {this.state.loading
         ? <div>loading...</div>
         : <table>
@@ -57,4 +63,5 @@ class Main extends Component {
   }
 }
 
+// Don't forget to export your comenents so they can be imported.
 export default Main;
